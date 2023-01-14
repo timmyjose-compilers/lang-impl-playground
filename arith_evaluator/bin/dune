@@ -1,0 +1,4 @@
+(executable
+ (public_name arith_evaluator)
+ (name main)
+ (libraries arith_evaluator))

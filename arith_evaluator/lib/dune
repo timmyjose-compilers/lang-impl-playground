@@ -1,0 +1,4 @@
+(library
+ (name arith_evaluator)
+ (modules ast lexer parser evaluator)
+ (flags (:standard -warn-error "-unused-open")))

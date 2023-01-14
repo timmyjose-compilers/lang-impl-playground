@@ -1,0 +1,24 @@
+(lang dune 3.6)
+
+(name arith_evaluator)
+
+(generate_opam_files true)
+
+(source
+ (github username/reponame))
+
+(authors "Timmy Jose")
+
+(maintainers "Timmy Jose")
+
+(license LICENSE)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name arith_evaluator)
+ (synopsis "A simple arithmetic parser-evaluator in pure OCaml")
+ (description "A longer description")
+ (depends ocaml dune)
+ (tags
+  (topics "to describe" your project)))
