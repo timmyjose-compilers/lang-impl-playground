@@ -12,9 +12,15 @@ let go () =
       print_newline ();
       loop ()
     with
-    | Lexer_error lex_err -> print_endline lex_err
-    | Parser_error parse_err -> print_endline parse_err
-    | Eval_error eval_err -> print_endline eval_err
+    | Lexer_error lex_err ->
+        print_endline lex_err;
+        loop ()
+    | Parser_error parse_err ->
+        print_endline parse_err;
+        loop ()
+    | Eval_error eval_err ->
+        print_endline eval_err;
+        loop ()
     | _ -> ()
   in
   loop ()

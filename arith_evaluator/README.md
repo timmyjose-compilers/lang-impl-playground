@@ -4,3 +4,9 @@ The following types and operations are supported:
 
   * Basic Integers.
   * +, -, *, /, and %.
+
+## Build 
+
+```
+  $ dune build && dune exec arith_eval
+```
